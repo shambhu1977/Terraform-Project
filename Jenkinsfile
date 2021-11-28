@@ -2,6 +2,13 @@ pipeline {
    agent any
   
   stages{
+     
+     stage('Install'){
+        steps{
+           sh 'mvn clean install'
+           echo 'Installing the project ...'
+        }
+     }
     
     stage('TF init'){
       steps {
