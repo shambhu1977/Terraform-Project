@@ -8,6 +8,7 @@ pipeline {
         sh 'terraform init'
         echo 'Initing Terraform'
       }
+    }
       
       stage('TF plan'){
         steps{
