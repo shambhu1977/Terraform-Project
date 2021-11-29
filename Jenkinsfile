@@ -5,8 +5,7 @@ pipeline {
      
      stage('Install'){
         steps{
-           sh 'mvn clean install'
-           echo 'Installing the project ...'
+           git 'https://github.com/shambhu1977/Terraform-Project'
         }
      }
     }
