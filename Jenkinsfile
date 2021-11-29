@@ -11,7 +11,7 @@ pipeline {
      
      stage('Terraform init'){
         steps{
-           bat '''terraform init''''
+           bat '''terraform init'''
         }
      }
     }
